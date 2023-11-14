@@ -1,17 +1,17 @@
 # RabbitMQ
 
-RabbitMQ 
+RabbitMQ 実装サンプル集
 
 ## Feature
 
+- &#x2610;
+- &#x2611;
+
 |key|value|
 |:---:|:---|
-|_|Build Golang backend example|
-|_|Build Node.ts or Bun.js backend example|
-|_|Build Rust|
-|_|Build Haskell|
-|_|Build Nim|
-|_|Build xxxx|
+|&#x2610;|Build Elixir|
+|&#x2610;|Build Golang|
+|&#x2610;|Build JavaScript Bun.js|
 
 ## References
 
