@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.12.8-management-alpine
+    platform: linux/x86_64
+    container_name: ${CONTAINER_NAME}_${ENV_NAME}
+    hostname: ${CONTAINER_NAME}_${ENV_NAME}
+    ports:
+      - ${RABBITMQ_PORT}:5672
+      - ${RABBITMQ_MANAGEMENT_PORT}:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_MANAGEMENT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_MANAGEMENT_PASSWORD}
+    volumes:
+      - ./rabbitmq_data:/var/lib/rabbitmq
